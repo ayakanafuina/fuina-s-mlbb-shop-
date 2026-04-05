@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🌸 Fuina Shop 🌸</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #fff0f5;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    header {
+      background: linear-gradient(90deg, #ffc0cb, #ffe4e1);
+      padding: 30px 0;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: #d147a3;
+    }
+    header p {
+      margin: 5px 0 0 0;
+      font-size: 1em;
+      color: #a33d87;
+    }
+    .product-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 30px auto;
+      max-width: 1000px;
+      gap: 20px;
+    }
+    .product-box {
+      background: #fff;
+      width: 250px;
+      border-radius: 20px;
+      box-shadow: 0 5px 15px rgba(255,192,203,0.4);
+      padding: 20px;
+      transition: transform 0.2s;
+    }
+    .product-box:hover {
+      transform: scale(1.05);
+    }
+    .product-box h2 {
+      margin: 0;
+      color: #d147a3;
+      font-size: 1.5em;
+    }
+    .product-box p {
+      margin: 10px 0;
+      font-size: 1.1em;
+      color: #555;
+    }
+    button {
+      background: #ffc0cb;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 15px;
+      font-size: 1em;
+      cursor: pointer;
+      color: #fff;
+      font-weight: bold;
+      transition: background 0.2s;
+    }
+    button:hover {
+      background: #ff99cc;
+    }
+    footer {
+      margin-top: 40px;
+      padding: 20px 0;
+      background: #ffe4e1;
+      color: #a33d87;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🌸 Fuina Shop 🌸</h1>
+  <p>Affordable • Fast • Trusted</p>
+</header>
+
+<div class="product-container">
+  <div class="product-box">
+    <h2>💎 86 Diamonds</h2>
+    <p>₱49</p>
+    <button onclick="order('86 Diamonds')">Buy Now</button>
+  </div>
+
+  <div class="product-box">
+    <h2>💎 172 Diamonds</h2>
+    <p>₱95</p>
+    <button onclick="order('172 Diamonds')">Buy Now</button>
+  </div>
+
+  <div class="product-box">
+    <h2>💎 257 Diamonds</h2>
+    <p>₱140</p>
+    <button onclick="order('257 Diamonds')">Buy Now</button>
+  </div>
+
+  <div class="product-box">
+    <h2>💎 430 Diamonds</h2>
+    <p>₱235</p>
+    <button onclick="order('430 Diamonds')">Buy Now</button>
+  </div>
+</div>
+
+<script>
+function order(item) {
+  let userID = prompt("Enter your ML ID:");
+  let server = prompt("Enter your Server ID:");
+  alert(
+    "Order received!\n" +
+    "Item: " + item + "\n" +
+    "ID: " + userID + "\n" +
+    "Server: " + server + "\n\n" +
+    "Send payment via GCash 💖"
+  );
+}
+</script>
+
+<footer>
+  🌸 GCash: 0912-345-6789 | Follow us on FB: Fuina Shop 🌸
+</footer>
+
+</body>
+</html>
